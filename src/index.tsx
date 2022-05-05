@@ -5,7 +5,7 @@ import App from './App';
 import theme from './theme';
 
 const container = document.getElementById('root');
-const root = createRoot(container);
+const root = createRoot(container as Element);
 root.render(
   <StyledEngineProvider injectFirst>
     <ThemeProvider theme={theme}>

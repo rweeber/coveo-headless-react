@@ -19,6 +19,7 @@ interface ISearchPageProps {
 const SearchPage: React.FunctionComponent<ISearchPageProps> = (props) => {
   const {engine} = props;
   useEffect(() => {
+    engine.state.searchHub = "hp-global"
     engine.executeFirstSearch();
   }, [engine]);
 
